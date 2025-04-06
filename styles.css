@@ -489,4 +489,69 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+/* ===================== MOBILE-ONLY STYLES (UNDER 768px) ===================== */
+@media (max-width: 768px) {
+  /* Hide navigation links */
+  nav ul {
+    display: none;
+  }
+
+  /* Adjust header spacing */
+  .sticky-header {
+    padding: 0.5rem 0;
+  }
+
+  /* Profile image scaling */
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    margin: 1rem auto;
+  }
+
+  /* Collaboration logos */
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Stack collaboration cards */
+  .company-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Single column layouts */
+  .projects-grid,
+  .collaborations-grid,
+  .experience {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce section margins */
+  section {
+    margin: 2.5rem 0;
+  }
+
+  /* Adjust about section layout */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  /* Contact card spacing */
+  .contact-grid {
+    gap: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  /* Slightly reduce heading sizes */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+}
   }
