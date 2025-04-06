@@ -612,21 +612,36 @@ h3 {
     height: 50px;
   }
 }
-    /* ===================== REMOVE NAVIGATION LINKS ===================== */
-nav {
-  display: none !important;
+/* Remove navigation links ONLY on mobile */
+@media (max-width: 768px) {
+  nav {
+    display: none !important;
+  }
 }
 
-/* ===================== MOBILE LOGO ADJUSTMENT ===================== */
-@media (max-width: 768px) {
+/* Logo size adjustments */
+.profile-photo {
+  width: 220px;  /* Reduced from 320px */
+  height: 220px; /* Reduced from 320px */
+}
+
+/* Maintain original desktop size */
+@media (min-width: 769px) {
   .profile-photo {
-    width: 220px;
-    height: 220px;
+    width: 320px;
+    height: 320px;
   }
-  
-  /* Optional: Adjust header padding if needed */
-  .sticky-header {
-    padding: 1rem 0;
+}
+
+/* Collaboration logo scaling */
+.company-logo {
+  transform: scale(0.8);  /* Reduce all logos by 20% */
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  .company-logo {
+    transform: scale(0.6);  /* Reduce mobile logos by 40% */
   }
 }
   }
