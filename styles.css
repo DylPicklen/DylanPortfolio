@@ -554,4 +554,62 @@ h3 {
     font-size: 1.6rem;
   }
 }
+    /* ===================== MOBILE HEADER CLEANUP ===================== */
+@media (max-width: 768px) {
+  /* Completely remove navigation */
+  nav {
+    display: none !important;
+  }
+
+  /* Center name header vertically */
+  .sticky-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Fixed header height */
+    padding: 0;
+  }
+
+  /* Remove header shadow on mobile */
+  .sticky-header {
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  /* Adjust body padding for reduced header height */
+  body {
+    padding-top: 80px;
+  }
+}
+/* ===================== MOBILE COLLABORATION LOGOS ===================== */
+@media (max-width: 768px) {
+  .company-logo {
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .company-brand {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  /* Specific fix for IKEA logo */
+  .company-brand img[alt="IKEA Logo"] {
+    max-width: 120px; /* For SVG/vector logos */
+    height: 35px;
+  }
+
+  /* Samsung logo fix */
+  .company-brand img[src*="samsung"] {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* TKS logo fix */
+  .company-brand img[src*="TKS"] {
+    width: 50px;
+    height: 50px;
+  }
+}
   }
