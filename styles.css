@@ -612,4 +612,21 @@ h3 {
     height: 50px;
   }
 }
+    /* ===================== REMOVE NAVIGATION LINKS ===================== */
+nav {
+  display: none !important;
+}
+
+/* ===================== MOBILE LOGO ADJUSTMENT ===================== */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 220px;
+    height: 220px;
+  }
+  
+  /* Optional: Adjust header padding if needed */
+  .sticky-header {
+    padding: 1rem 0;
+  }
+}
   }
